@@ -66,7 +66,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid_Morales()
+        public void Multiply_Invalid_Morales()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -74,7 +74,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null_Morales()
+        public void Multiply_Null_Morales()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -83,7 +83,7 @@ namespace GithubActionsLab
         
         //Divide
         [Test]
-        public void Multiply_Valid_Morales()
+        public void Divide_Valid_Morales()
         {
             Assert.AreEqual(2, Program.Divide("4", "2"));
             Assert.AreEqual(0, Program.Divide("0", "1"));
@@ -91,7 +91,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid_Morales()
+        public void Divide_Invalid_Morales()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -99,7 +99,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null_Morales()
+        public void Divide_Null_Morales()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
